@@ -41,6 +41,8 @@ function CardUI() {
         }
     };
 
+
+
     async function searchCard(e: any): Promise<void> {
         e.preventDefault();
         let obj = { userId: userId, search: search };
@@ -72,6 +74,8 @@ function CardUI() {
             setResults(error.toString());
         }
     };
+
+
 
     function handleSearchTextChange(e: any): void {
         setSearchValue(e.target.value);
